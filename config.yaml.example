@@ -1,0 +1,40 @@
+# wechat-echo 配置文件
+# 复制此文件为 config.yaml 并填写你的 API Key
+
+# API 配置
+api:
+  # 选择提供商: "deepseek" 或 "qwen"（通义千问）
+  provider: "deepseek"
+
+  # DeepSeek API Key（从 https://platform.deepseek.com 获取）
+  deepseek_key: "sk-your-deepseek-key-here"
+
+  # 通义千问 API Key（从 https://dashscope.aliyun.com 获取）
+  qwen_key: "sk-your-qwen-key-here"
+
+  # 模型名称（一般不需要改）
+  deepseek_model: "deepseek-chat"
+  qwen_model: "qwen-turbo"
+
+# 聊天机器人设置
+chatbot:
+  # 回复温度（0.1-1.0），越高越随机、越有创意
+  temperature: 0.7
+
+  # 最大回复长度（token 数）
+  max_tokens: 500
+
+  # RAG 检索：返回最相似的 N 条历史消息作为参考
+  top_k: 10
+
+  # 是否使用对方的原始昵称
+  use_nickname: true
+  nickname: "她"
+
+# 微信数据提取设置（仅 Windows）
+wechat:
+  # 微信版本（自动检测，一般不需要手动设置）
+  version: "auto"
+
+  # 要提取的联系人备注名或昵称
+  contact_name: ""
