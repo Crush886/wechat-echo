@@ -1,0 +1,22 @@
+# wechat-echo 依赖包
+
+# Web 界面
+gradio>=4.0.0
+
+# AI 模型 API 调用
+openai>=1.0.0
+
+# 向量数据库（用于 RAG 检索）
+chromadb>=0.4.0
+
+# 配置文件解析
+pyyaml>=6.0
+
+# 微信数据库解密（仅 Windows）
+# pywxdump>=1.0.0
+
+# 数据处理
+pandas>=2.0.0
+
+# 文本分词（中文支持）
+jieba>=0.42.1
